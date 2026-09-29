@@ -1,6 +1,8 @@
 # Praktikum 2 HTML Lanjutan
 
-Nama: Elisia Putri  
+Nama: Elisia Putri Sarmelinda
+NIM: 312510456
+Kelas: I252A
 Program Studi: Teknik Informatika  
 Universitas: Universitas Pelita Bangsa  
 
