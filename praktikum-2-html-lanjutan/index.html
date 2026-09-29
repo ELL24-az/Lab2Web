@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Praktikum 2 HTML Lanjutan</title>
+</head>
+<body>
+<header>
+    <h1>Praktikum 2 HTML Lanjutan</h1>
+</header>
+<nav>
+    <a href="index.html">Beranda</a> |
+    <a href="biodata.html">Biodata</a>
+</nav>
+<main>
+    <section>
+        <h2>Data Mahasiswa</h2>
+        <table border="1">
+            <caption>Data Mahasiswa Teknik Informatika</caption>
+
+            <thead>
+                <tr><th>No</th><th>NIM</th><th>Nama</th><th>Program Studi</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>312510031</td><td>Tegar Addinia</td><td>Teknik Informatika</td></tr>
+                <tr><td>2</td><td>312510342</td><td>Rizky Fauzan</td><td>Teknik Informatika</td></tr>
+                <tr><td>3</td><td>312510100</td><td>Muhammad Zaki</td><td>Teknik Informatika</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="3">Jumlah Mahasiswa</td><td>3 Orang</td></tr>
+            </tfoot>
+        </table>
+    </section>
+    <section>
+        <h2>Form Registrasi Mahasiswa</h2>
+        <form>
+            <label for="nama">Nama Lengkap</label><br>
+            <input type="text" id="nama" name="nama" required minlength="3">
+            <br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <label for="tanggal">Tanggal Lahir</label><br>
+            <input type="date" id="tanggal" name="tanggal">
+            <br><br>
+
+            <label>Jenis Kelamin</label><br>
+            <input type="radio" id="laki" name="jk" value="L">
+
+            <label for="laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jk" value="P">
+
+            <label for="perempuan">Perempuan</label>
+
+            <br><br>
+
+            <label>Keahlian</label><br>
+
+            <input type="checkbox" id="html" name="skill" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skill" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="js" name="skill" value="JavaScript">
+            <label for="js">JavaScript</label>
+
+            <br><br>
+
+            <label for="prodi">Program Studi</label><br>
+
+            <select id="prodi" name="prodi" required>
+                <option value="">-- Pilih Prodi --</option>
+                <option value="ti">Teknik Informatika</option>
+                <option value="si">Sistem Informasi</option>
+            </select>
+
+            <br><br>
+
+            <label for="alamat">Alamat</label><br>
+
+            <textarea id="alamat" name="alamat" rows="5" cols="40" required></textarea>
+
+            <br><br>
+
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </section>
+    <section>
+        <h2>Multimedia</h2>
+
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="media/audio.mp3" type="audio/mpeg">
+            Browser tidak mendukung audio.
+        </audio>
+
+        <h3>Video</h3>
+        <video controls width="300">
+            <source src="media/video.mp4" type="video/mp4">
+            Browser tidak mendukung video.
+        </video>
+    </section>
+    <section>
+        <h2>Form Validasi</h2>
+
+        <form>
+            <label for="nama2">Nama</label><br>
+            <input type="text" id="nama2" name="nama2"
+                   required minlength="3">
+
+            <br><br>
+
+            <label for="email2">Email</label><br>
+            <input type="email" id="email2" name="email2"
+                   required>
+
+            <br><br>
+
+            <label for="umur">Umur</label><br>
+            <input type="number" id="umur" name="umur"
+                   min="17" max="60" required>
+
+            <br><br>
+
+            <button type="submit">Kirim</button>
+
+        </form>
+    </section>
+
+</main>
+<footer>
+    <p>&copy; 2026 Teknik Informatika</p>
+</footer>
+</body>
+</html>
